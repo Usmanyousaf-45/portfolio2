@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const Hero = () => {
   return (
     <section className="relative flex flex-col items-center justify-center text-center min-h-[90vh] px-6 overflow-hidden">
@@ -10,7 +12,16 @@ const Hero = () => {
       <div className="absolute top-1/3 right-1/3 w-72 h-72 bg-blue-300 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-pulse"></div>
 
       {/* Content */}
-      <div className="relative z-10">
+      <div className="relative z-10 flex flex-col items-center">
+        {/* 👇 Profile Pic */}
+        <Image
+          src="/usman.jpeg" // apni pic ka naam jo public folder me ho
+          alt="Usman Yousaf"
+          width={160}
+          height={160}
+          className="rounded-full border-4 border-white shadow-2xl mb-6"
+        />
+
         <h1 className="text-6xl md:text-7xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-yellow-300 via-pink-400 to-purple-600 drop-shadow-xl animate-fade-in">
           Hi, I’m Usman Yousaf
         </h1>
@@ -30,7 +41,7 @@ const Hero = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Hero
+export default Hero;
