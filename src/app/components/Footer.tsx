@@ -45,7 +45,7 @@ const Footer = () => {
             <FaTiktok />
           </a>
           <a
-            href="https://www.youtube.com/"
+            href="http://www.youtube.com/@UsmanXAI-g9q"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="YouTube"
