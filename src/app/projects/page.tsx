@@ -9,19 +9,19 @@ export default function Projects() {
         <ProjectCard
           title="Portfolio Website"
           description="A colourful & responsive portfolio built with Next.js, TypeScript, and TailwindCSS."
-          image="/portfolio.jpg"
+          image="/portfolio.jpeg"
           link="https://portfoliowebsite-mauve-two.vercel.app/"
         />
         <ProjectCard
           title="E-commerce Store"
           description="A creative e-commerce platform with smooth UI and modern design."
-          image="/e-commerece.jpg"
+          image="/e-commerece.jpeg"
           link="https://e-commerece-two-theta.vercel.app/"
         />
         <ProjectCard
           title="AI App"
           description="An AI-powered business tool with experimental features."
-          image="/ai-app.jpg"
+          image="/ai-app.jpeg"
           link="https://ai-app-ochre-two.vercel.app/"
         />
       </div>

@@ -43,7 +43,7 @@ const Hero = () => {
           <div className="relative">
             <div className="absolute inset-0 w-full h-full rounded-full bg-gradient-to-r from-pink-500 via-yellow-400 to-cyan-400 blur-3xl opacity-70 animate-pulse"></div>
             <Image
-              src="/usman.jpg"
+              src="/usman.jpeg"
               alt="Usman Yousaf"
               width={420}
               height={420}
