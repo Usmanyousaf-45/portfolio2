@@ -10,19 +10,19 @@ export default function Projects() {
           title="Portfolio Website"
           description="A modern colourful portfolio made with Next.js, TypeScript & Tailwind."
           image="/portfolio.jpg"
-          link="https://vercel.com/usman-yousafs-projects-9dcd356b/portfoliowebsite/3gYN23VwbizZZJVUFujjn1F2jHJq"
+          link="https://portfoliowebsite-mauve-two.vercel.app/"
         />
         <ProjectCard
           title="E-commerce Store"
           description="A stylish e-commerce website with colourful gradients and smooth UI."
           image="/e-commerece.jpg"
-          link="https://vercel.com/usman-yousafs-projects-9dcd356b/e-commerece/DwCr6YGxLc29kGeJgZWjcFSRtTf6"
+          link="https://e-commerece-two-theta.vercel.app/"
         />
         <ProjectCard
           title="AI App"
           description="An experimental AI-powered application for businesses."
           image="/ai-app.jpg"
-          link="https://vercel.com/usman-yousafs-projects-9dcd356b/ai-app/6rQgYz3284sr1YrzNk1AFEnNnJBC"
+          link="https://ai-app-ochre-two.vercel.app/"
         />
       </div>
     </section>
