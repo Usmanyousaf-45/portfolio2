@@ -1,26 +1,76 @@
-const Hero = () => {
+import { FaGithub } from "react-icons/fa6";
+import { FaInstagram } from "react-icons/fa6";
+import { FaTiktok } from "react-icons/fa6";
+import { FaYoutube } from "react-icons/fa6";
+import { FaLinkedin } from "react-icons/fa6";
+
+
+const Footer = () => {
   return (
-    <section className="relative flex flex-col items-center justify-center text-center min-h-[90vh] px-6 overflow-hidden">
-      {/* Background Gradient */}
-      <div className="absolute inset-0 bg-gradient-to-br from-yellow-200 via-pink-300 to-purple-700 opacity-20 animate-pulse"></div>
+    <footer className="bg-gradient-to-r from-blue-600 via-purple-700 to-pink-600 text-white py-8 mt-12 shadow-lg">
+      <div className="max-w-6xl mx-auto flex flex-col items-center gap-5 text-center">
+        
+        {/* Footer Text */}
+        <div>
+          <p className="text-sm tracking-wide">
+            © {new Date().getFullYear()} <span className="font-semibold">Usman’s Portfolio</span>. All Rights Reserved.
+          </p>
+          <p className="mt-2 text-yellow-200 font-semibold italic">
+            Crafted with ❤️ using Next.js + TailwindCSS
+          </p>
+        </div>
 
-      {/* Heading */}
-      <h1 className="text-5xl sm:text-6xl lg:text-7xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-yellow-300 via-pink-400 to-purple-600 drop-shadow-lg">
-        Hi, I’m <span className="underline decoration-pink-400">Usman Yousaf</span>
-      </h1>
+        {/* Social Media Links */}
+        <div className="flex gap-7 text-2xl mt-4">
+          <a
+            href="https://github.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub"
+            className="hover:scale-110 hover:text-gray-100 transition-transform duration-200"
+          >
+            <FaGithub />
+          </a>
+          <a
+            href="https://www.instagram.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Instagram"
+            className="hover:scale-110 hover:text-pink-300 transition-transform duration-200"
+          >
+            <FaInstagram />
+          </a>
+          <a
+            href="https://www.tiktok.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="TikTok"
+            className="hover:scale-110 hover:text-gray-300 transition-transform duration-200"
+          >
+            <FaTiktok />
+          </a>
+          <a
+            href="http://www.youtube.com/@UsmanXAI-g9q"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="YouTube"
+            className="hover:scale-110 hover:text-red-400 transition-transform duration-200"
+          >
+            <FaYoutube />
+          </a>
+          <a
+            href="https://www.linkedin.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="LinkedIn"
+            className="hover:scale-110 hover:text-blue-300 transition-transform duration-200"
+          >
+            <FaLinkedin />
+          </a>
+        </div>
+      </div>
+    </footer>
+  );
+};
 
-      {/* Subheading */}
-      <p className="mt-6 text-lg sm:text-xl text-white/90 max-w-2xl mx-auto leading-relaxed">
-        Businessman | Developer | <span className="font-bold text-pink-300">AI Enthusiast</span>  
-        <br />I create colourful, modern and impactful digital solutions.
-      </p>
-
-      {/* Call to Action Button */}
-      <button className="mt-10 px-8 py-4 bg-gradient-to-r from-yellow-400 via-pink-500 to-purple-600 rounded-2xl font-semibold shadow-xl hover:scale-110 hover:shadow-2xl transition-all duration-300">
-        🚀 Explore My Work
-      </button>
-    </section>
-  )
-}
-
-export default Hero
+export default Footer;
